@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+    <title>form</title>
+  </head>
+  <body>
+    <section class="hero">
+      <h1>Your Happy Cake Shop</h1>
+    </section>
+
+    <section class="section-form">
+      <!-- FORM for Ordering Cakes -->
+      <form action="http://httpbin.org/post" method="post">
+        <div class="input-area">
+          <label>Name</label>
+          <input type="name" name="name" required />
+        </div>
+        <div class="input-area">
+          <label>Email</label>
+          <input type="email" name="email" required />
+        </div>
+        <div class="input-area">
+          <label>Adress</label>
+          <input type="name" name="address" required />
+        </div>
+        <div class="input-area">
+          <label>Tellephone</label>
+          <input type="tel" name="tel" required />
+        </div>
+
+        <div class="input-area">
+          <label>Date</label>
+          <input type="date" name="date" required />
+        </div>
+
+        <div class="input-area">
+          <label>How Many Cakes?</label>
+          <input type="number" min="1" max="20" />
+        </div>
+
+        <div class="input-area">
+          <label>Color</label>
+          <select name="color" id="color">
+            <option disabled required>Choose a Cake of Color</option>
+            <option value="pink">Pink</option>
+            <option value="white">White</option>
+            <option value="green">Green</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+            <option value="blue">Blue</option>
+            <option value="rainbow">Rainbow</option>
+          </select>
+        </div>
+
+        <div class="input-area">
+          <label>Message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Any wishes?"
+          ></textarea>
+        </div>
+
+        <button type="submit">Order Your Cakes</button>
+      </form>
+    </section>
+    <div class="image-area">
+      <img src="./images/cake3.jpg" />
+      <img src="./images/cake4.jpg" />
+
+      <img src="./images/cake6.jpg" />
+    </div>
+    <footer><p>Created by Sakura for Technigo Project</p></footer>
+  </body>
+</html>
